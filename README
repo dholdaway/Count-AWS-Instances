@@ -1,0 +1,7 @@
+Counts AWS EC2 Instances and RDS Instances in all profiles and regions.
+
+to run from the directory
+./get_total.sh
+
+
+make sure that your aws config file ( ~/.aws/config) contains a profile
