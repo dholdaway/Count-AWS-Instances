@@ -5,7 +5,7 @@ while read Profile; do " $Profile " < /tmp/profiles.txt
 	    sed "s/$/\t$Profile/" tmp >> /tmp/totalinstances.txt
 	    if [ -s tmp ]; 
 		then 
-		 wc tmp | sed "s/tmp/$Profile/" | sed -e "s/^/$line/" | awk '{print $5","$1","$2}' | tee --append /tmp/daily_count.csv
+		 wc tmp | sed "s/tmp/$Profile/" | sed -e "s/^/$line/" | awk '{print $2","$5}' | tee --append /tmp/daily_count.csv
 	    fi 
     done < data/regions.txt
 done < /tmp/profiles.txt
