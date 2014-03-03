@@ -3,6 +3,8 @@ Counts AWS EC2 Instances and RDS Instances in all profiles and regions.
 to run from the directory
 ./get_total.sh
 
+install the AWS CLI
+http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-set-up.html
 
 make sure that your aws config file contains a profile.
 
