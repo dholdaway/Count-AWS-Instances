@@ -4,9 +4,9 @@ import csv
 import MySQLdb
 
 mydb = MySQLdb.connect(host='localhost',
-    user='root',
-    passwd='3upHEf2c',
-    db='aws')
+    user='USER',
+    passwd='PASSWORD',
+    db='AWS')
 cursor = mydb.cursor()
 #	cursor.execute('alter table total modify rds set default 0')
 #mydb.commit()
